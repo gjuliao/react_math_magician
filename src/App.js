@@ -1,12 +1,18 @@
 /* eslint-disable quotes, jsx-quotes */
+import React from 'react';
 import Calculator from './components/Calculator';
 
-function App() {
-  return (
-    <div className='App container '>
-      <Calculator />
-    </div>
-  );
-}
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-export default App;
+  render() {
+    return (
+      <div className='App container '>
+        <Calculator />
+      </div>
+    );
+  }
+}
