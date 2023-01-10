@@ -35,7 +35,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Leaderboard App <a name="about-project"></a>
+# 📖 Math Magician <a name="about-project"></a>
 
 **[Math Magician]** Is a react app with a calculator and math quotes.
 
@@ -88,9 +88,9 @@ and follow these steps.
 Clone this repository to your desired folder:
 
 1. Download the **Zip** file or clone the repo with:
-   `bash git clone git@github.com:gjuliao/math_magician.git`
+   `bash git clone git@github.com:gjuliao/react_rmath_magician.git`
 2. To access cloned directory run:
-   `bash cd math_magician `
+   `bash cd react_math_magician `
 3. Open it with the live server
 
 ### Install
