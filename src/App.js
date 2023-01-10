@@ -1,9 +1,10 @@
-/* eslint-disable quotes */
+/* eslint-disable quotes, jsx-quotes */
+import Calculator from './components/Calculator';
 
 function App() {
   return (
-    <div className="App">
-      <h2>hello world</h2>
+    <div className='App container '>
+      <Calculator />
     </div>
   );
 }

@@ -1,3 +1,23 @@
 body {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
 }
+
+.calculator {
+  width: 14.5%;
+  justify-content: center;
+}
+
+.buttons {
+  padding: 0;
+  min-width: 3rem;
+}
+
+.zero-btn {
+  min-width: 6rem;
+  height: 1.6rem;
+  line-height: 0.5rem;
+}
+
