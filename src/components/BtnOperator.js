@@ -1,5 +1,7 @@
-/* eslint-disable quotes, jsx-quotes, react/prop-types */
-import React from 'react';
+/* eslint-disable quotes */
+
+import React from "react";
+import PropTypes from "prop-types";
 
 export default class BtnOperator extends React.Component {
   constructor(props) {
@@ -10,11 +12,17 @@ export default class BtnOperator extends React.Component {
   render() {
     const { item } = this.props;
     return (
-      <div>
-        <button className='btn btn-warning buttons' type='button'>
-          {item}
-        </button>
+      <div className="bg-warning buttons border-0 shadow-none text-dark">
+        {item}
       </div>
     );
   }
 }
+
+BtnOperator.defaultProps = {
+  item: null,
+};
+
+BtnOperator.propTypes = {
+  item: PropTypes.string,
+};

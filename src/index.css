@@ -3,11 +3,17 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  background-color: #FFFFFF;
 }
 
 .calculator {
-  width: 14.5%;
+  width: 15%;
   justify-content: center;
+  margin: auto;
+}
+
+.output {
+  min-width: 12rem;
 }
 
 .buttons {
@@ -18,5 +24,5 @@ body {
 .zero-btn {
   min-width: 6rem;
   height: 1.6rem;
-  line-height: 0.5rem;
+  line-height: 1.5rem;
 }
