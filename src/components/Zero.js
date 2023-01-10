@@ -11,7 +11,7 @@ export default class Zero extends React.Component {
   render() {
     const { item } = this.props;
     return (
-      <div className="bg-secondary-subtle zero-btn shadow-none border-0 text-dark">
+      <div className="bg-secondary-subtle zero-btn border border-light-subtle text-dark">
         {item}
       </div>
     );
