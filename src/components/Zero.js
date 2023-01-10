@@ -1,12 +1,20 @@
 /* eslint-disable quotes, jsx-quotes, react/prop-types */
 import React from 'react';
 
-const Zero = ({ item }) => (
-  <div>
-    <button className='btn btn-secondary zero-btn' type='button'>
-      {item}
-    </button>
-  </div>
-);
+export default class Zero extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-export default Zero;
+  render() {
+    const { item } = this.props;
+    return (
+      <div>
+        <button className='btn btn-secondary zero-btn' type='button'>
+          {item}
+        </button>
+      </div>
+    );
+  }
+}
