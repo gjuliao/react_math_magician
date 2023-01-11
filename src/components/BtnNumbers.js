@@ -10,6 +10,7 @@ export default class BtnNumbers extends React.Component {
 
   render() {
     const { item, handleClick } = this.props;
+
     return (
       <button onClick={handleClick} type="button" className="bg-secondary-subtle buttons border border-light-subtle text-dark">
         {item}
