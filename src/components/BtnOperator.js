@@ -10,19 +10,21 @@ export default class BtnOperator extends React.Component {
   }
 
   render() {
-    const { item } = this.props;
+    const { item, handleClick } = this.props;
     return (
-      <div className="bg-warning buttons border border-light-subtle text-dark">
+      <button type="button" onClick={handleClick} className="bg-warning buttons border border-light-subtle text-dark">
         {item}
-      </div>
+      </button>
     );
   }
 }
 
 BtnOperator.defaultProps = {
   item: null,
+  handleClick: null,
 };
 
 BtnOperator.propTypes = {
   item: PropTypes.string,
+  handleClick: PropTypes.func,
 };
