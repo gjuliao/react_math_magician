@@ -1,3 +1,4 @@
+/* stylelint-disable no-missing-end-of-source-newline */
 body {
   box-sizing: border-box;
   margin: 0;
@@ -14,6 +15,7 @@ body {
 
 .output {
   min-width: 12rem;
+  min-height: 2.5rem;
 }
 
 .buttons {

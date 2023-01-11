@@ -9,19 +9,21 @@ export default class Zero extends React.Component {
   }
 
   render() {
-    const { item } = this.props;
+    const { item, handleClick } = this.props;
     return (
-      <div className="bg-secondary-subtle zero-btn border border-light-subtle text-dark">
+      <button onClick={handleClick} type="button" className="bg-secondary-subtle zero-btn border border-light-subtle text-dark">
         {item}
-      </div>
+      </button>
     );
   }
 }
 
 Zero.defaultProps = {
   item: null,
+  handleClick: null,
 };
 
 Zero.propTypes = {
   item: PropTypes.string,
+  handleClick: PropTypes.func,
 };

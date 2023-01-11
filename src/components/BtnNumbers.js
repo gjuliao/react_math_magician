@@ -9,19 +9,22 @@ export default class BtnNumbers extends React.Component {
   }
 
   render() {
-    const { item } = this.props;
+    const { item, handleClick } = this.props;
+
     return (
-      <div className="bg-secondary-subtle buttons border border-light-subtle text-dark">
+      <button onClick={handleClick} type="button" className="bg-secondary-subtle buttons border border-light-subtle text-dark">
         {item}
-      </div>
+      </button>
     );
   }
 }
 
 BtnNumbers.defaultProps = {
   item: null,
+  handleClick: null,
 };
 
 BtnNumbers.propTypes = {
   item: PropTypes.string,
+  handleClick: PropTypes.func,
 };
