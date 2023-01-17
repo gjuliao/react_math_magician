@@ -7,24 +7,65 @@ body {
   background-color: #fff;
 }
 
+.navbar {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_list {
+  padding-right: 5%;
+  margin-right: 5%;
+}
+
 .calculator {
   width: 15%;
   justify-content: center;
   margin: auto;
 }
 
+.calculator_container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
 .output {
-  min-width: 12rem;
+  min-width: 24rem;
   min-height: 2.5rem;
+  min-height: 3rem;
+}
+
+.math_title {
+  padding-top: 5%;
+}
+
+.home {
+  width: 90%;
+  margin: auto;
+  padding-top: 3%;
+}
+
+.home p {
+  padding-top: 4%;
 }
 
 .buttons {
   padding: 0;
-  min-width: 3rem;
+  min-width: 6rem;
+  min-height: 3rem;
 }
 
 .zero-btn {
-  min-width: 6rem;
-  height: 1.6rem;
+  min-width: 12rem;
+  min-height: 3rem;
+  height: 3.2rem;
   line-height: 1.5rem;
+}
+
+.quote {
+  width: 70%;
+  margin: auto;
+  padding-top: 10%;
 }
