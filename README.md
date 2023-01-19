@@ -66,7 +66,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link Pending]()
+- [Live Demo Link](https://math-magician-bn4w.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
