@@ -1,9 +1,7 @@
 /* eslint-disable quotes, no-console */
 
 import React, { useState } from 'react';
-import BtnNumbers from './BtnNumbers';
-import BtnOperator from './BtnOperator';
-import Zero from './Zero';
+import Buttons from './Buttons';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
@@ -32,33 +30,33 @@ const Calculator = () => {
             </p>
           </div>
           <div className="d-flex">
-            <BtnNumbers handleClick={handleClick} item="AC" />
-            <BtnNumbers handleClick={handleClick} item="+/-" />
-            <BtnNumbers handleClick={handleClick} item="%" />
-            <BtnOperator handleClick={handleClick} item="÷" />
+            <Buttons colors="bg-secondary-subtle buttons" handleClick={handleClick} item="AC" />
+            <Buttons colors="bg-secondary-subtle buttons" handleClick={handleClick} item="+/-" />
+            <Buttons colors="bg-secondary-subtle buttons" handleClick={handleClick} item="%" />
+            <Buttons colors="bg-warning buttons" handleClick={handleClick} item="÷" />
           </div>
           <div className="d-flex">
-            <BtnNumbers handleClick={handleClick} item="7" />
-            <BtnNumbers handleClick={handleClick} item="8" />
-            <BtnNumbers handleClick={handleClick} item="9" />
-            <BtnOperator handleClick={handleClick} item="x" />
+            <Buttons colors="bg-secondary-subtle buttons" handleClick={handleClick} item="7" />
+            <Buttons colors="bg-secondary-subtle buttons" handleClick={handleClick} item="8" />
+            <Buttons colors="bg-secondary-subtle buttons" handleClick={handleClick} item="9" />
+            <Buttons colors="bg-warning buttons" handleClick={handleClick} item="x" />
           </div>
           <div className="d-flex">
-            <BtnNumbers handleClick={handleClick} item="4" />
-            <BtnNumbers handleClick={handleClick} item="5" />
-            <BtnNumbers handleClick={handleClick} item="6" />
-            <BtnOperator handleClick={handleClick} item="-" />
+            <Buttons colors="bg-secondary-subtle buttons" handleClick={handleClick} item="4" />
+            <Buttons colors="bg-secondary-subtle buttons" handleClick={handleClick} item="5" />
+            <Buttons colors="bg-secondary-subtle buttons" handleClick={handleClick} item="6" />
+            <Buttons colors="bg-warning buttons" handleClick={handleClick} item="-" />
           </div>
           <div className="d-flex">
-            <BtnNumbers handleClick={handleClick} item="1" />
-            <BtnNumbers handleClick={handleClick} item="2" />
-            <BtnNumbers handleClick={handleClick} item="3" />
-            <BtnOperator handleClick={handleClick} item="+" />
+            <Buttons colors="bg-secondary-subtle buttons" handleClick={handleClick} item="1" />
+            <Buttons colors="bg-secondary-subtle buttons" handleClick={handleClick} item="2" />
+            <Buttons colors="bg-secondary-subtle buttons" handleClick={handleClick} item="3" />
+            <Buttons colors="bg-warning buttons" handleClick={handleClick} item="+" />
           </div>
           <div className="d-flex">
-            <Zero handleClick={handleClick} item="0" />
-            <BtnNumbers handleClick={handleClick} item="." />
-            <BtnOperator handleClick={handleClick} item="=" />
+            <Buttons colors="zero-btn bg-secondary-subtle" handleClick={handleClick} item="0" />
+            <Buttons colors="bg-secondary-subtle buttons" handleClick={handleClick} item="." />
+            <Buttons colors="bg-warning buttons" handleClick={handleClick} item="=" />
           </div>
         </section>
       </div>

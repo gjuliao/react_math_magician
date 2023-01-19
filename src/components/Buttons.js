@@ -2,28 +2,31 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default class Zero extends React.Component {
+export default class Buttons extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
 
   render() {
-    const { item, handleClick } = this.props;
+    const { item, handleClick, colors } = this.props;
+
     return (
-      <button onClick={handleClick} type="button" className="bg-secondary-subtle zero-btn border border-light-subtle text-dark">
+      <button onClick={handleClick} type="button" className={`${colors} border border-light-subtle text-dark`}>
         {item}
       </button>
     );
   }
 }
 
-Zero.defaultProps = {
+Buttons.defaultProps = {
   item: null,
   handleClick: null,
+  colors: null,
 };
 
-Zero.propTypes = {
+Buttons.propTypes = {
   item: PropTypes.string,
   handleClick: PropTypes.func,
+  colors: PropTypes.string,
 };
